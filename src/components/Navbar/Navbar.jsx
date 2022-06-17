@@ -16,6 +16,7 @@ const Navbar = () => {
       <div className="navbar">
         <div className="left-nav">
           <img src={logo} alt="Toralabs" className="nav-logo" />
+          <h1>ToraLabs</h1>
         </div>
         <div className="right-nav">
           <div className="drawer-icons">
