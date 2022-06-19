@@ -4,7 +4,7 @@
   flex-direction: column;
   /* place-items: center; */
   gap: 0.8rem;
-  padding: 2rem;
+  padding: 1.5rem;
   border: #68a7c3 2px solid;
   border-radius: 10px;
   transition: all 0.5s ease;
@@ -12,7 +12,7 @@
 
 .card-icon {
   color: #68a7c3;
-  font-size: 10rem;
+  font-size: 8rem;
   text-align: center;
 }
 
