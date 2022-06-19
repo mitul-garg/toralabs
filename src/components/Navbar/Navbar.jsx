@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 
 import logo from "../../assests/logo.webp";
 import { GiHamburgerMenu } from "react-icons/gi";
@@ -16,6 +16,13 @@ const Navbar = () => {
   const handleNavClick = () => {
     // toggleDrawer();
   };
+
+  useEffect(() => {
+    let drawer = setInterval(() => {
+      setOpenDrawer(false);
+    }, 5000);
+    return () => clearInterval(drawer);
+  }, [openDrawer]);
 
   return (
     <>
