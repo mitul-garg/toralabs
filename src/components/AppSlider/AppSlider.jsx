@@ -29,7 +29,7 @@ const AppSlider = ({ apps }) => {
   return (
     <section className="section">
       <div className="title">
-        <h2>Apps</h2>
+        <h2>Products</h2>
       </div>
       <div className="section-center">
         {data.map((item, itemIndex) => {

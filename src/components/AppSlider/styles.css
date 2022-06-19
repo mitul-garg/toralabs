@@ -32,7 +32,7 @@
   margin: 0 auto;
   margin-top: 4rem;
   width: 80vw;
-  height: 450px;
+  height: 425px;
   max-width: 800px;
   text-align: center;
   position: relative;
@@ -42,7 +42,7 @@
 
 @media screen and (max-width: 1000px) {
   .section-center {
-    height: 675px;
+    height: 625px;
   }
 }
 

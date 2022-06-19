@@ -1,0 +1,33 @@
+.card {
+  background-color: #282828;
+  display: flex;
+  flex-direction: column;
+  /* place-items: center; */
+  gap: 0.8rem;
+  padding: 2rem;
+  border: #68a7c3 2px solid;
+  border-radius: 10px;
+}
+
+.card-icon {
+  color: #68a7c3;
+  font-size: 10rem;
+  text-align: center;
+}
+
+.card-title {
+  color: white;
+  font-size: 1.4rem;
+  letter-spacing: 1.1px;
+  font-weight: 800;
+}
+
+.card-list {
+  color: #9ca3af;
+}
+
+.card-list li {
+  margin: 0.6rem 0;
+  font-size: 1.1rem;
+  font-weight: 700;
+}
