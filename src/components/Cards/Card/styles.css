@@ -7,6 +7,7 @@
   padding: 2rem;
   border: #68a7c3 2px solid;
   border-radius: 10px;
+  transition: all 0.5s ease;
 }
 
 .card-icon {
@@ -30,4 +31,8 @@
   margin: 0.6rem 0;
   font-size: 1.1rem;
   font-weight: 700;
+}
+
+.card:hover {
+  transform: scale(1.05);
 }
