@@ -4,12 +4,18 @@ import logo from "../../assests/logo.webp";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { GrClose } from "react-icons/gr";
 
+import { links } from "../../data/links";
+
 import "./styles.css";
 
 const Navbar = () => {
   const [openDrawer, setOpenDrawer] = useState(false);
 
   const toggleDrawer = () => setOpenDrawer((prev) => !prev);
+
+  const handleNavClick = () => {
+    // toggleDrawer();
+  };
 
   return (
     <>
@@ -21,25 +27,31 @@ const Navbar = () => {
         <div className="right-nav">
           <div className="drawer-icons">
             <GiHamburgerMenu
-              className={openDrawer ? "hamburger hidden" : "hamburger"}
+              className={openDrawer ? "hamburger icon-hidden" : "hamburger"}
               onClick={toggleDrawer}
             />
             <GrClose
-              className={openDrawer ? "close-icon" : "close-icon hidden"}
+              className={openDrawer ? "close-icon" : "close-icon icon-hidden"}
               onClick={toggleDrawer}
             />
           </div>
           <ul className="nav-links">
-            <li>About</li>
-            <li>Apps</li>
-            <li>Contact</li>
+            {links.map(({ id, name, href }) => (
+              <li key={id} className="link">
+                <a href={href}>{name}</a>
+              </li>
+            ))}
           </ul>
         </div>
       </div>
       <ul className={openDrawer ? "down-drawer" : "down-drawer hidden"}>
-        <li>About</li>
-        <li>Apps</li>
-        <li>Contact</li>
+        {links.map(({ id, name, href }) => (
+          <li key={id} className="link">
+            <a href={href} onClick={handleNavClick}>
+              {name}
+            </a>
+          </li>
+        ))}
       </ul>
     </>
   );

@@ -1,5 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans&display=swap");
 
+html {
+  scroll-behavior: smooth;
+}
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -13,10 +17,4 @@ a {
 
 ul {
   list-style-type: none;
-}
-
-.temp {
-  background-color: #1f1f1f;
-  margin-top: 7px;
-  height: 10000px;
 }

@@ -27,7 +27,7 @@ const AppSlider = ({ apps }) => {
   }, [index]);
 
   return (
-    <section className="section">
+    <section className="section" id="products">
       <div className="title">
         <h2>Products</h2>
       </div>
