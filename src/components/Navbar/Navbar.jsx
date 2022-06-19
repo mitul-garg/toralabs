@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 
-import logo from "../../assests/logo.webp";
+import logo from "../../assets/logo.webp";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { GrClose } from "react-icons/gr";
 

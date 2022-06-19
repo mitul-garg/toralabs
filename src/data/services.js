@@ -1,4 +1,4 @@
-import { AiFillAndroid, AiFillChrome } from "react-icons/ai";
+import { AiFillAndroid, AiFillApple, AiFillChrome } from "react-icons/ai";
 import { MdMonetizationOn } from "react-icons/md";
 
 export const services = [
@@ -7,11 +7,11 @@ export const services = [
     name: "Android Development",
     icon: <AiFillAndroid />,
     features: [
-      "Full Stack Apps",
-      "Small Sized",
-      "Playstore Publishing",
-      "Google Adsense & Facebook Ads",
-      "Maintenance",
+      "• Full Stack Android Apps",
+      "• Free publish on Google Play Store",
+      "• Admob & Facebook Ads Integration",
+      "• Minimal Cost Maintenance",
+      "• App Store Optimization (ASO)",
     ],
   },
   {
@@ -19,23 +19,23 @@ export const services = [
     name: "Web Development",
     icon: <AiFillChrome />,
     features: [
-      "Full Stack Websites",
-      "UI Development",
-      "Hosting & Maintenance",
-      "Google Adsense & Facebook Ads",
-      "Seach Engine Optimiztion (SEO)",
+      "• Full Stack Websites in React JS",
+      "• UI Development",
+      "• Hosting & Maintenance",
+      "• Google Adsense Integration",
+      "• Seach Engine Optimization (SEO)",
     ],
   },
   {
     id: 2,
-    name: "Couple Development",
-    icon: <MdMonetizationOn />,
+    name: "iOS Development",
+    icon: <AiFillApple />,
     features: [
-      "Full Stack App and Website",
-      "Hosting, Publishing & Maintenance",
-      "Google Adsense & Facebook Ads",
-      "Seach Engine Optimiztion (SEO)",
-      "Business Development",
+      "• Full Stack iOS Apps",
+      "• Hosting, Publishing & Maintenance",
+      "• Admob & Facebook Ads Integration",
+      "• App Store Optimization (ASO)",
+      "• Minimal Cost Maintenance",
     ],
   },
 ];

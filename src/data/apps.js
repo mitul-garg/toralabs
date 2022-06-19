@@ -1,26 +1,26 @@
-import deviceInfo from "../assests/apps/device-info.webp";
-import apkExtractor from "../assests/apps/apk-extractor.webp";
-import jeeMains from "../assests/apps/jee-mains.webp";
-import jeeAdvanced from "../assests/apps/jee-advanced.webp";
-import neet from "../assests/apps/neet.webp";
-import aiims from "../assests/apps/aiims.webp";
-import chemistry from "../assests/apps/chemistry.webp";
-import hcVerma from "../assests/apps/hc-verma.webp";
-import maths from "../assests/apps/maths.webp";
-import physics from "../assests/apps/physics.webp";
+import deviceInfo from "../assets/apps/device-info.webp";
+import apkExtractor from "../assets/apps/apk-extractor.webp";
+import jeeMains from "../assets/apps/jee-mains.webp";
+import jeeAdvanced from "../assets/apps/jee-advanced.webp";
+import neet from "../assets/apps/neet.webp";
+import aiims from "../assets/apps/aiims.webp";
+import chemistry from "../assets/apps/chemistry.webp";
+import hcVerma from "../assets/apps/hc-verma.webp";
+import maths from "../assets/apps/maths.webp";
+import physics from "../assets/apps/physics.webp";
 
 export const apps = [
   {
     id: 0,
     image: deviceInfo,
-    name: "device info",
+    name: "Device Info",
     link: "https://play.google.com/store/apps/details?id=com.toralabs.deviceinfo",
     desc: "Device Info is a user-friendly Android application that gives you complete and detailed information about your mobile device with best user-interface. Device Info is packed with many features to give you all info regarding software and hardware of your android device like CPU, RAM, OS, Sensors, Storage, Battery, SIM, Bluetooth, Installed Apps, System Apps, Display, Camera, Thermal, Codecs, Inputs.",
   },
   {
     id: 1,
     image: apkExtractor,
-    name: "apk extractor",
+    name: "APK Extractor",
     link: "https://play.google.com/store/apps/details?id=com.toralabs.apkextractor",
     desc: "Apk Extractor is a fast and lightweight app to extract apk & the app icons from apps on your device. It works fast and is easy to use and can extract both System and Installed Apps",
   },
