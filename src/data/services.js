@@ -1,5 +1,4 @@
 import { AiFillAndroid, AiFillApple, AiFillChrome } from "react-icons/ai";
-import { MdMonetizationOn } from "react-icons/md";
 
 export const services = [
   {
