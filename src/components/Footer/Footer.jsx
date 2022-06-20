@@ -13,18 +13,24 @@ const Footer = () => {
 
   const [loading, setLoading] = useState(false);
   const [sent, setSent] = useState(false);
+  const [msg, setMsg] = useState("");
 
   const sendEmail = async (e) => {
     e.preventDefault();
 
     setLoading(true);
 
-    const result = await emailjs.sendForm(
-      process.env.REACT_APP_SERVICE_ID,
-      process.env.REACT_APP_TEMPLATE_ID,
-      form.current,
-      process.env.REACT_APP_PUBLIC_KEY
-    );
+    try {
+      const result = await emailjs.sendForm(
+        process.env.REACT_APP_SERVICE_ID,
+        process.env.REACT_APP_TEMPLATE_ID,
+        form.current,
+        process.env.REACT_APP_PUBLIC_KEY
+      );
+      setMsg("Message Sent. We will get back to you soon!");
+    } catch (error) {
+      setMsg("There was some error while sending your request.");
+    }
 
     setLoading(false);
     setSent(true);
@@ -41,8 +47,8 @@ const Footer = () => {
           <>
             {sent ? (
               <div className="sent-message">
-                <h3>Message Sent. We will get back to you soon!</h3>
-                <button onClick={() => setSent(false)}>Send Another!</button>
+                <h3>{msg}</h3>
+                <button onClick={() => setSent(false)}>Send Again</button>
               </div>
             ) : (
               <form ref={form} onSubmit={sendEmail} className="contact-form">
