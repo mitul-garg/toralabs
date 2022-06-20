@@ -1,0 +1,42 @@
+.about {
+  display: flex;
+  margin: 2rem 2rem;
+  flex-direction: column;
+  place-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+}
+
+.about h2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 900;
+  font-size: 1.8rem;
+  letter-spacing: 0.8px;
+}
+
+.about p {
+  font-size: 1.2rem;
+  letter-spacing: 0.8px;
+  font-weight: 550;
+  color: #171137;
+  line-height: 35px;
+  margin: 0 6rem;
+}
+
+.about-img {
+  width: 400px;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+@media screen and (max-width: 1000px) {
+  .about p {
+    margin: 0 1rem;
+  }
+
+  .about-img {
+    width: 300px;
+  }
+}

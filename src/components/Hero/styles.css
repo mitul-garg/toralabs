@@ -31,6 +31,11 @@
   color: #68e1fd;
 }
 
+.hero-btn-anchor {
+  width: 100%;
+  text-align: center;
+}
+
 .hero-btn {
   background-color: #ff6161;
   color: whitesmoke;

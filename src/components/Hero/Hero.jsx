@@ -28,7 +28,9 @@ const Hero = () => {
             </li>
           ))}
         </ul>
-        <button className="hero-btn">Get In Touch</button>
+        <a href="#contact" className="hero-btn-anchor">
+          <button className="hero-btn">Get In Touch</button>
+        </a>
       </div>
     </div>
   );

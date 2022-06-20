@@ -1,0 +1,137 @@
+.footer {
+  background-color: #1f1f1f;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  place-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+  padding: 2rem 0;
+}
+
+.contact-img {
+  width: 300px;
+}
+
+@media screen and (max-width: 1000px) {
+  .contact-img {
+    width: 200px;
+  }
+}
+
+.contact {
+  display: flex;
+  flex-direction: column;
+  place-items: center;
+  gap: 1rem;
+}
+
+.contact h2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 900;
+  font-size: 1.8rem;
+  letter-spacing: 0.8px;
+}
+
+.contact-form {
+  background: #181a1b;
+  border-radius: 0.3rem;
+  margin-top: 1.5rem;
+  text-align: center;
+  width: 90vw;
+  max-width: 35rem;
+  padding: 1.25rem 0.75rem;
+}
+
+.form-group {
+  padding: 1rem 1.5rem;
+}
+
+.form-control {
+  display: block;
+  width: 100%;
+  padding: 0.75rem 1rem;
+  border: none;
+  margin-bottom: 1.25rem;
+  background-color: #1e2022;
+  color: #cecac3;
+  border-radius: 0.3rem;
+  letter-spacing: 1.5px;
+}
+
+.form-control::placeholder {
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  color: #71706e;
+}
+
+.submit-btn {
+  background-color: #ff6161;
+  color: whitesmoke;
+  padding: 0.5rem;
+  width: 30%;
+  font-size: 1.1rem;
+  font-weight: 700;
+  letter-spacing: 0.6px;
+  border: none;
+  border-radius: 0.2rem;
+  transition: all 0.5s ease;
+}
+.submit-btn:hover {
+  cursor: pointer;
+  background-color: white;
+  color: #311e69;
+  transform: scale(1.1);
+}
+
+.copyright {
+  display: flex;
+  place-items: center;
+  font-size: 1rem;
+  letter-spacing: 1px;
+  gap: 0.3rem;
+}
+
+.sent-message {
+  display: flex;
+  flex-direction: column;
+  place-items: center;
+  margin-top: 2rem;
+  border-radius: 5px;
+  gap: 1rem;
+  background-color: #181a1b;
+  width: 90vw;
+  max-width: 35rem;
+  padding: 1.25rem 0.75rem;
+}
+
+.sent-message h3 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 900;
+  font-size: 1.2rem;
+  letter-spacing: 0.8px;
+}
+
+.sent-message button {
+  background-color: #ff6161;
+  color: whitesmoke;
+  padding: 0.5rem;
+  width: 200px;
+  font-size: 1.1rem;
+  font-weight: 700;
+  letter-spacing: 0.6px;
+  border: none;
+  border-radius: 0.2rem;
+  transition: all 0.5s ease;
+}
+
+.sent-message button:hover {
+  cursor: pointer;
+  background-color: white;
+  color: #311e69;
+  transform: scale(1.1);
+}
