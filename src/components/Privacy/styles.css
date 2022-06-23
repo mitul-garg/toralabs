@@ -3,9 +3,8 @@
   justify-content: space-between;
   place-items: center;
   padding: 0.5rem 0.5rem;
-  background-color: white;
-  color: #171137;
-  box-shadow: 0px 2px 2px 2px #171137;
+  background-color: #171137;
+  color: white;
 }
 
 .privacy-left-nav {
@@ -33,15 +32,16 @@
 }
 
 .privacy-nav-link {
-  color: #171137;
-  transition: all 0.3 ease;
+  color: white;
+  transition: all 0.5s ease;
   display: flex;
   place-items: center;
   gap: 0.4rem;
 }
 
 .privacy-nav-link:hover {
-  color: #2caeba;
+  color: #68e1fd;
+  transform: scale(1.1);
 }
 
 @media screen and (max-width: 1000px) {
@@ -59,6 +59,10 @@
   flex-direction: column;
   gap: 2rem;
   margin: 2rem 2rem;
+}
+
+.privacy-header {
+  line-height: 25px;
 }
 
 .privacy-content {

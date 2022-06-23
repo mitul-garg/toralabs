@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-import logo from "../../assets/logo.webp";
+import logo from "../../assets/ToraLabs-Logo-Blue.png";
 import { IoHome } from "react-icons/io5";
 
 import "./styles.css";
