@@ -84,16 +84,27 @@ const Footer = () => {
         )}
       </div>
       <ul className="social-links">
-        {socialLinks.map(({ id, icon, link }) => (
+        {socialLinks.map(({ id, icon, link, email }) => (
           <li key={id} className="social-link">
-            <a
-              href={link}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="social-icon"
-            >
-              {icon}
-            </a>
+            {!email ? (
+              <a
+                href={link}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="social-icon"
+              >
+                {icon}
+              </a>
+            ) : (
+              <a
+                href={`mailto:${link}`}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="social-icon"
+              >
+                {icon}
+              </a>
+            )}
           </li>
         ))}
       </ul>

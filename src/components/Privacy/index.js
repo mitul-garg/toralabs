@@ -1,0 +1,10 @@
+export { default as Aiims } from "./aiims";
+export { default as ApkExtractor } from "./apkExtractor";
+export { default as Chemistry } from "./chemistry";
+export { default as DeviceInfo } from "./deviceInfo";
+export { default as HCVerma } from "./hcVerma";
+export { default as JEEAdvanced } from "./jeeAdvanced";
+export { default as JEEMains } from "./jeeMains";
+export { default as Maths } from "./maths";
+export { default as Neet } from "./neet";
+export { default as Physics } from "./physics";

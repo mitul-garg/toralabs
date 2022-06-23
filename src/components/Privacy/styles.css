@@ -1,0 +1,68 @@
+.privacy-navbar {
+  display: flex;
+  justify-content: space-between;
+  place-items: center;
+  padding: 0.5rem 0.5rem;
+  background-color: white;
+  color: #171137;
+  box-shadow: 0px 2px 2px 2px #171137;
+}
+
+.privacy-left-nav {
+  margin-left: 2rem;
+  display: flex;
+  place-items: center;
+}
+
+.privacy-left-nav h1 {
+  letter-spacing: 0.5px;
+  font-size: 1.75rem;
+}
+
+.privacy-nav-logo {
+  width: 40px;
+  margin-right: 0.8rem;
+}
+
+.privacy-right-nav {
+  margin-right: 10rem;
+  margin-left: 1rem;
+  font-size: 1.3rem;
+  letter-spacing: 1.1px;
+  font-weight: 700;
+}
+
+.privacy-nav-link {
+  color: #171137;
+  transition: all 0.3 ease;
+  display: flex;
+  place-items: center;
+  gap: 0.4rem;
+}
+
+.privacy-nav-link:hover {
+  color: #2caeba;
+}
+
+@media screen and (max-width: 1000px) {
+  .privacy-left-nav {
+    margin-left: 1rem;
+  }
+
+  .privacy-right-nav {
+    margin-right: 1rem;
+  }
+}
+
+.policy {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  margin: 2rem 2rem;
+}
+
+.privacy-content {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}

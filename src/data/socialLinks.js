@@ -1,10 +1,5 @@
-import {
-  BsLinkedin,
-  BsGithub,
-  BsMedium,
-  BsStackOverflow,
-} from "react-icons/bs";
-import { IoLogoGooglePlaystore } from "react-icons/io5";
+import { BsLinkedin, BsGithub, BsStackOverflow } from "react-icons/bs";
+import { IoLogoGooglePlaystore, IoMailSharp } from "react-icons/io5";
 
 export const socialLinks = [
   {
@@ -24,8 +19,9 @@ export const socialLinks = [
   },
   {
     id: 3,
-    icon: <BsMedium />,
-    link: "https://medium.com/@mrudultora",
+    icon: <IoMailSharp />,
+    link: "toralabs24@gmail.com",
+    email: true,
   },
   {
     id: 4,
