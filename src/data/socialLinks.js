@@ -5,7 +5,7 @@ export const socialLinks = [
   {
     id: 0,
     icon: <BsLinkedin />,
-    link: "https://www.linkedin.com/in/mrudul-tora-571004166/",
+    link: "https://www.linkedin.com/in/mrudultora/",
   },
   {
     id: 1,
@@ -20,7 +20,7 @@ export const socialLinks = [
   {
     id: 3,
     icon: <IoMailSharp />,
-    link: "toralabs24@gmail.com",
+    link: "info@toralabs.in",
     email: true,
   },
   {

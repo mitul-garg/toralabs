@@ -109,8 +109,8 @@ const Footer = () => {
         ))}
       </ul>
       <div className="copyright">
-        <AiOutlineCopyrightCircle /> ToraLabs Copyright{" "}
-        {new Date().getFullYear()}
+        <AiOutlineCopyrightCircle /> ToraLabs {" "}
+        {new Date().getFullYear()} | All Rights Reserved
       </div>
     </div>
   );

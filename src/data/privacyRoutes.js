@@ -27,25 +27,25 @@ export const privacyRoutes = [
   {
     id: 2,
     name: "JEE Main Solved Papers Offline",
-    to: "jee-mains-solved-papers",
+    to: "jee-mains",
     component: <JEEMains />,
   },
   {
     id: 3,
     name: "JEE Advanced Solved Papers",
-    to: "jee-advanced-solved-papers",
+    to: "jee-advanced",
     component: <JEEAdvanced />,
   },
   {
     id: 4,
     name: "NEET Solved Papers Offline",
-    to: "neet-solved-papers",
+    to: "neet",
     component: <Neet />,
   },
   {
     id: 5,
     name: "AIIMS Solved Papers Offline",
-    to: "aiims-solved-papers",
+    to: "aiims",
     component: <Aiims />,
   },
   {
