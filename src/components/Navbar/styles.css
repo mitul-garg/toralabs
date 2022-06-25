@@ -64,13 +64,13 @@
 @media screen and (max-width: 1000px) {
   .left-nav {
     margin-left: 1rem;
-    width: 70%;
+    width: 90%;
   }
 
   .right-nav {
     margin-right: 1rem;
     text-align: end;
-    width: 30%;
+    width: 10%;
   }
 
   .hamburger:hover,
