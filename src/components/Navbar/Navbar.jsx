@@ -4,11 +4,9 @@ import logo from "../../assets/logo.webp";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { GrClose } from "react-icons/gr";
 
-import { links } from "../../data/links";
-
 import "./styles.css";
 
-const Navbar = () => {
+const Navbar = ({ links, heading }) => {
   const [openDrawer, setOpenDrawer] = useState(false);
 
   const toggleDrawer = () => setOpenDrawer((prev) => !prev);
@@ -29,7 +27,7 @@ const Navbar = () => {
       <div className="navbar">
         <div className="left-nav">
           <img src={logo} alt="Toralabs" className="nav-logo" />
-          <h1>ToraLabs</h1>
+          <h1>{heading}</h1>
         </div>
         <div className="right-nav">
           <div className="drawer-icons">

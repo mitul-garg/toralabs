@@ -6,6 +6,9 @@ import "./App.css";
 import { Navbar, Hero, AppSlider, Cards, About, Footer } from "./components";
 import PrivacyNavbar from "./components/Privacy/PrivacyNavbar";
 
+import DeviceInfoPage from "./appPages/DeviceInfo/DeviceInfoPage";
+
+import { homeLinks, deviceInfoLinks } from "./data/links";
 import { apps } from "./data/apps";
 import { services } from "./data/services";
 import { privacyRoutes } from "./data/privacyRoutes";
@@ -20,7 +23,7 @@ const App = () => {
             path="/"
             element={
               <>
-                <Navbar />
+                <Navbar links={homeLinks} heading="ToraLabs" />
                 <Hero />
                 <AppSlider apps={apps} id="products" />
                 <Cards data={services} heading="Services" />
@@ -28,6 +31,7 @@ const App = () => {
               </>
             }
           />
+
           {privacyRoutes.map(({ id, to, component }) => (
             <Route
               key={id}
@@ -41,6 +45,17 @@ const App = () => {
               }
             />
           ))}
+
+          <Route
+            exact
+            path="/device-info"
+            element={
+              <>
+                <Navbar links={deviceInfoLinks} heading="Device Info" />
+                <DeviceInfoPage />
+              </>
+            }
+          />
         </Routes>
         <Footer />
       </div>
