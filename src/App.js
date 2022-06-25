@@ -6,6 +6,8 @@ import "./App.css";
 import { Navbar, Hero, AppSlider, Cards, About, Footer } from "./components";
 import PrivacyNavbar from "./components/Privacy/PrivacyNavbar";
 
+import { Error } from "./Error";
+
 import DeviceInfoPage from "./appPages/DeviceInfo/DeviceInfoPage";
 
 import { homeLinks, deviceInfoLinks } from "./data/links";
@@ -28,6 +30,7 @@ const App = () => {
                 <AppSlider apps={apps} id="products" />
                 <Cards data={services} heading="Services" />
                 <About />
+                <Footer />
               </>
             }
           />
@@ -41,6 +44,7 @@ const App = () => {
                 <>
                   <PrivacyNavbar />
                   {component}
+                  <Footer />
                 </>
               }
             />
@@ -53,11 +57,21 @@ const App = () => {
               <>
                 <Navbar links={deviceInfoLinks} heading="Device Info" />
                 <DeviceInfoPage />
+                <Footer />
+              </>
+            }
+          />
+
+          <Route
+            path="*"
+            element={
+              <>
+                <PrivacyNavbar />
+                <Error />
               </>
             }
           />
         </Routes>
-        <Footer />
       </div>
     </Router>
   );
