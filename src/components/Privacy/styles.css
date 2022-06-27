@@ -67,6 +67,7 @@
   flex-direction: column;
   gap: 2rem;
   margin: 2rem 2rem;
+  padding-top: 50px;
 }
 
 .privacy-header {

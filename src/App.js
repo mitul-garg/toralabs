@@ -4,6 +4,7 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import "./App.css";
 
 import { Navbar, Hero, AppSlider, Cards, About, Footer } from "./components";
+import { Wave } from "./appPages/DeviceInfo/components/Divider";
 import PrivacyNavbar from "./components/Privacy/PrivacyNavbar";
 
 import { Error } from "./Error";
@@ -26,6 +27,7 @@ const App = () => {
             element={
               <>
                 <Navbar links={homeLinks} heading="ToraLabs" />
+                <Wave color="white" />
                 <Hero />
                 <AppSlider apps={apps} id="products" />
                 <Cards data={services} heading="Services" />
@@ -43,6 +45,7 @@ const App = () => {
               element={
                 <>
                   <PrivacyNavbar />
+                  <Wave color="#171137" />
                   {component}
                   <Footer />
                 </>
