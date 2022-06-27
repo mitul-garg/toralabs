@@ -1,6 +1,7 @@
 import React from "react";
 
-import heroImg from "../../../../assets/device-info/hero.svg";
+import heroImg from "../../../../assets/device-info/home.png";
+import heroRightImg from "../../../../assets/device-info/hero.svg";
 import { IoLogoGooglePlaystore } from "react-icons/io5";
 
 import "./styles.css";
@@ -10,10 +11,10 @@ const DeviceInfoHero = () => {
     <div className="device-info-hero">
       <img src={heroImg} alt="DeviceInfo" className="device-info-hero-img" />
       <div className="device-info-hero-content">
-        <h2>
-          Device Info <br /> System & HW Info
-        </h2>
-        <div className="device-info-hero-buttons">
+        <div className="device-info-hero-content-left">
+          <h2>
+            Device Info <br /> System & HW Info
+          </h2>
           <a
             href="https://play.google.com/store/apps/details?id=com.toralabs.deviceinfo"
             target="_blank"
@@ -23,6 +24,11 @@ const DeviceInfoHero = () => {
             Download <IoLogoGooglePlaystore />
           </a>
         </div>
+        <img
+          src={heroRightImg}
+          alt="DeviceInfo"
+          className="device-info-hero-right-img"
+        />
       </div>
     </div>
   );

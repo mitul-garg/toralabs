@@ -1,13 +1,13 @@
 .device-info-hero {
-  background-image: linear-gradient(180deg, #1f1f1f, #535d81);
+  background-image: linear-gradient(180deg, #2b4ee3, #1f1f1f);
   color: white;
   display: flex;
   flex-direction: row;
   justify-content: center;
   place-items: center;
-  padding-top: 100px;
+  padding-top: 70px;
   padding-bottom: 100px;
-  gap: 15rem;
+  gap: 10rem;
 }
 
 .device-info-hero-img {
@@ -16,10 +16,10 @@
 
 .device-info-hero-content {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   justify-content: center;
   place-items: center;
-  gap: 1.5rem;
+  gap: 2rem;
 }
 
 .device-info-hero-content h2 {
@@ -28,6 +28,14 @@
   text-transform: uppercase;
   letter-spacing: 1.1px;
   line-height: 40px;
+}
+
+.device-info-hero-content-left {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1rem;
+  place-items: center;
 }
 
 .device-info-hero-button {
@@ -44,6 +52,7 @@
   justify-content: center;
   place-items: center;
   gap: 0.3rem;
+  width: 150px;
 }
 
 .device-info-hero-button:hover {
@@ -53,15 +62,25 @@
   transform: scale(1.1);
 }
 
+.device-info-hero-right-img {
+  width: 190px;
+}
+
 @media screen and (max-width: 1000px) {
   .device-info-hero {
+    padding-top: 50px;
+    padding-bottom: 75px;
     display: flex;
     flex-direction: column;
-    gap: 2.4rem;
+    gap: 1.5rem;
   }
 
   .device-info-hero-img {
-    width: 250px;
+    width: 225px;
+  }
+
+  .device-info-hero-right-img {
+    display: none;
   }
 }
 
