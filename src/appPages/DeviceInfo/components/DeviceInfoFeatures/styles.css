@@ -1,3 +1,114 @@
 .device-info-features {
-  height: 300px;
+  display: flex;
+  flex-direction: column;
+  place-items: center;
+  gap: 1rem;
+  margin: 2rem 2rem;
+}
+
+.device-info-heading {
+  font-size: 2rem;
+  letter-spacing: 1px;
+}
+
+.device-info-features-content {
+  line-height: 28px;
+  letter-spacing: 0.7px;
+  font-size: 1.2rem;
+}
+
+/* cards */
+/* credits : https://codepen.io/keithaul */
+
+.front {
+  background-color: #282828;
+  color: #68a7c3;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  place-items: center;
+  gap: 1rem;
+}
+
+.front .icon-holder {
+  font-size: 3.3rem;
+}
+
+.front h2 {
+  color: white;
+  font-size: 1.3rem;
+  letter-spacing: 1px;
+}
+
+.maincontainer {
+  width: 200px;
+  height: 190px;
+  margin: 10px;
+  float: left;
+}
+
+.back {
+  display: flex;
+  place-items: center;
+  justify-content: center;
+  font-size: 0.75rem;
+  line-height: 20px;
+  letter-spacing: 1px;
+}
+
+.maincontainer > .front {
+  position: absolute;
+  transform: perspective(600px) rotateY(0deg);
+  width: 200px;
+  height: 190px;
+  backface-visibility: hidden;
+  transition: transform 0.6s linear 0s;
+}
+
+.maincontainer > .back {
+  position: absolute;
+  transform: perspective(600px) rotateY(180deg);
+  background: #171136;
+  color: white;
+  width: 200px;
+  height: 190px;
+  border-radius: 10px;
+  padding: 20px;
+  backface-visibility: hidden;
+  transition: transform 0.6s linear 0s;
+}
+
+.maincontainer:hover > .front {
+  transform: perspective(600px) rotateY(-180deg);
+}
+
+.maincontainer:hover > .back {
+  transform: perspective(600px) rotateY(0deg);
+}
+
+/* credits : https://codepen.io/keithaul */
+/* cards */
+
+.device-info-cards-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 1rem;
+}
+
+.youtube-video {
+  width: 80%;
+  height: 400px;
+}
+
+@media screen and (max-width: 1000px) {
+  .device-info-cards-container {
+    grid-template-columns: 1fr;
+    gap: 0.25rem;
+  }
+
+  .youtube-video {
+    width: 300px;
+    height: 200px;
+  }
 }
