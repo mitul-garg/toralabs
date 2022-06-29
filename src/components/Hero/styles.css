@@ -2,8 +2,16 @@
   display: flex;
   justify-content: space-around;
   place-items: center;
-  background-color: #1f1f1f;
+  /* background-color: #1f1f1f; */
+  background-image: linear-gradient(180deg, #171137, #1f1f1f);
   padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+@media screen and (min-width: 1000px) {
+  .hero {
+    padding-top: 120px;
+  }
 }
 
 .hero-img {
@@ -37,7 +45,7 @@
 }
 
 .hero-btn {
-  background-color: #ff6161;
+  background-color: #b4002f;
   color: whitesmoke;
   padding: 0.5rem;
   width: 40%;
@@ -63,12 +71,12 @@
 }
 
 .social-icon {
-  color: #c3ea75;
+  color: white;
   transition: all 0.5s ease;
 }
 
 .social-icon:hover {
-  color: white;
+  color: #fba219;
 }
 
 @media screen and (max-width: 1000px) {

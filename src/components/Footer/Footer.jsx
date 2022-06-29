@@ -4,7 +4,7 @@ import { Rings } from "react-loader-spinner";
 
 import { socialLinks } from "../../data/socialLinks";
 import { AiOutlineCopyrightCircle } from "react-icons/ai";
-import contactImg from "../../assets/contact.png";
+import contactImg from "../../assets/footer.svg";
 
 import "./styles.css";
 
@@ -109,8 +109,8 @@ const Footer = () => {
         ))}
       </ul>
       <div className="copyright">
-        <AiOutlineCopyrightCircle /> ToraLabs {" "}
-        {new Date().getFullYear()} | All Rights Reserved
+        <AiOutlineCopyrightCircle /> ToraLabs {new Date().getFullYear()} | All
+        Rights Reserved
       </div>
     </div>
   );

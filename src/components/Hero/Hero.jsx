@@ -1,6 +1,6 @@
 import React from "react";
 
-import heroImg from "../../assets/hero.png";
+import heroImg from "../../assets/hero.svg";
 import { socialLinks } from "../../data/socialLinks";
 import "./styles.css";
 

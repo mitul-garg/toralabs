@@ -1,17 +1,20 @@
 .card {
-  background-color: #282828;
+  /* background-color: #282828; */
+  background-image: linear-gradient(180deg, #171137, #1f1f1f);
   display: flex;
   flex-direction: column;
   /* place-items: center; */
   gap: 0.8rem;
   padding: 1.5rem;
-  border: #68a7c3 2px solid;
+  /* border: #68a7c3 2px solid; */
+  border: white 2px solid;
   border-radius: 10px;
   transition: all 0.5s ease;
 }
 
 .card-icon {
-  color: #68a7c3;
+  /* color: #68a7c3; */
+  color: white;
   font-size: 8rem;
   text-align: center;
 }
@@ -32,6 +35,7 @@
   margin: 0.6rem 0;
   font-size: 1.1rem;
   font-weight: 700;
+  letter-spacing: 0.5px;
 }
 
 .card:hover {
