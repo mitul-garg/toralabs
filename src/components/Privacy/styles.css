@@ -1,77 +1,51 @@
-.h1 {
-    color: #171137;
-    text-align: center;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: 50px;
-    letter-spacing: 0.8px;
-    font-family: "Plus Jakarta Sans", sans-serif;
-    text-decoration: underline;
+.privacy-navbar {
+  display: flex;
+  justify-content: space-between;
+  place-items: center;
+  padding: 0.5rem 0.5rem;
+  background-color: #171137;
+  color: white;
 }
 
-.h2 {
-    color: #171137;
-    display: flex;
-    margin-top: 60px;
-    margin-left: 15px;
-    margin-right: 15px;
-    letter-spacing: 0.8px;
-    font-family: "Plus Jakarta Sans", sans-serif;
+.privacy-left-nav {
+  margin-left: 2rem;
+  display: flex;
+  place-items: center;
 }
 
-.div {
-    align-content: center;
-    width: 80%;
-    margin: auto;
-    overflow-x: hidden; 
+.privacy-left-nav h1 {
+  letter-spacing: 0.5px;
+  font-size: 1.75rem;
 }
 
-.p1 {
-    color: #161617;
-    display: flex;
-    width: 1000px;
-    align-items: center;
-    font-size: medium;
-    letter-spacing: 0.8px;
-    justify-content: center;
-    margin-top: 25px;
-    margin-bottom: 20px;
-    margin-left: 15px;
-    margin-right: 15px;
-    font-family: "Plus Jakarta Sans", sans-serif;
+.privacy-nav-logo {
+  width: 40px;
+  margin-right: 0.8rem;
 }
 
-.navbar-privacy {
-    display: flex;
-    justify-content: space-between;
-    place-items: center;
-    padding: 0.5rem 0.5rem;
-    background-color: #171137;
-    color: white;
+.privacy-right-nav {
+  margin-right: 10rem;
+  margin-left: 1rem;
+  font-size: 1.3rem;
+  letter-spacing: 1.1px;
+  font-weight: 700;
 }
 
-.left-nav-privacy {
-    width: 50%;
-    margin-left: 2rem;
-    display: flex;
-    place-items: center;
+.privacy-nav-link {
+  color: white;
+  transition: all 0.5s ease;
+  display: flex;
+  place-items: center;
+  gap: 0.4rem;
 }
 
-.left-nav-privacy h1 {
-    letter-spacing: 0.5px;
-    font-size: 1.75rem;
+.privacy-nav-link:hover {
+  color: #68e1fd;
+  transform: scale(1.1);
 }
 
-.nav-logo-privacy {
-    width: 40px;
-    border-radius: 50%;
-    margin-right: 0.8rem;
-}
-
-.right-nav-privacy {
-    width: 50%;
-    margin-right: 10rem;
+@media screen and (max-width: 1000px) {
+  .privacy-left-nav {
     margin-left: 1rem;
   }
 
@@ -86,7 +60,8 @@
   .privacy-nav-link {
     font-size: 1.5rem;
   }
-  
+}
+
 .policy {
   display: flex;
   flex-direction: column;
