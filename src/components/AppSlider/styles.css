@@ -57,7 +57,7 @@
 }
 article h4 {
   text-transform: uppercase;
-  color: #3d007e;
+  color: #171137;
   margin-bottom: 0.25rem;
 }
 .text {
@@ -65,7 +65,7 @@ article h4 {
   margin: 0 auto;
   margin-top: 2rem;
   line-height: 2;
-  color: hsl(210, 22%, 49%);
+  color: #171137;
 }
 .icon {
   font-size: 1.7rem;
@@ -81,7 +81,7 @@ article h4 {
   position: absolute;
   top: 200px;
   transform: translateY(-50%);
-  background: hsl(210, 22%, 49%);
+  background: #171137;
   color: #fff;
   width: 1.25rem;
   height: 1.25rem;

@@ -1,6 +1,6 @@
 import React from "react";
 
-import heroImg from "../../../../assets/device-info/home.png";
+import heroImg from "../../../../assets/device-info/home.webp";
 import heroRightImg from "../../../../assets/device-info/hero.svg";
 import { IoLogoGooglePlaystore } from "react-icons/io5";
 
