@@ -7,6 +7,7 @@ import {
   DeviceInfoFeatures,
   DeviceInfoSlider,
   DeviceInfoStats,
+  DeviceInfoFAQs,
 } from "./components";
 import { Wave } from "./components/Divider";
 
@@ -17,7 +18,8 @@ const DeviceInfoPage = () => {
       <DeviceInfoHero />
       <DeviceInfoFeatures />
       <DeviceInfoSlider />
-      <DeviceInfoStats />
+      <DeviceInfoStats /> {/* reviews and stats both in this component */}
+      <DeviceInfoFAQs />
     </div>
   );
 };

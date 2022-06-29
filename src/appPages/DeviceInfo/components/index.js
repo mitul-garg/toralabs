@@ -2,3 +2,4 @@ export { default as DeviceInfoHero } from "./DeviceInfoHero/DeviceInfoHero";
 export { default as DeviceInfoFeatures } from "./DeviceInfoFeatures/DeviceInfoFeatures";
 export { default as DeviceInfoSlider } from "./DeviceInfoSlider/DeviceInfoSlider";
 export { default as DeviceInfoStats } from "./DeviceInfoStats/DeviceInfoStats";
+export { default as DeviceInfoFAQs } from "./DeviceInfoFAQs/DeviceInfoFAQs";
