@@ -13,7 +13,7 @@ const DeviceInfoHero = () => {
       <div className="device-info-hero-content">
         <div className="device-info-hero-content-left">
           <h2>
-            Device Info <br /> System & HW Info
+            Device Info<br />View System & HW Info
           </h2>
           <a
             href="https://play.google.com/store/apps/details?id=com.toralabs.deviceinfo"

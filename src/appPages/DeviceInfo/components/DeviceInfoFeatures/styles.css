@@ -7,14 +7,14 @@
 }
 
 .device-info-heading {
-  font-size: 2rem;
+  font-size: 1.7rem;
   letter-spacing: 1px;
 }
 
 .device-info-features-content {
   line-height: 28px;
-  letter-spacing: 0.7px;
-  font-size: 1.2rem;
+  letter-spacing: 0.6px;
+  font-size: 1.1rem;
 }
 
 /* cards */

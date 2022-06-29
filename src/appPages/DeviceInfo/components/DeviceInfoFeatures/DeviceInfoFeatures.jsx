@@ -27,7 +27,7 @@ const DeviceInfoFeatures = () => {
         ))}
       </div>
       <a
-        href="https://www.youtube.com/embed/iIRDG23SS6s"
+        href="https://www.youtube.com/watch?v=iIRDG23SS6s"
         target="_blank"
         rel="noopener noreferrer"
         className="device-info-features-button"
