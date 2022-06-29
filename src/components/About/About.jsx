@@ -2,8 +2,6 @@ import React from "react";
 
 import aboutImg from "../../assets/about.svg";
 
-import { FaExternalLinkAlt } from "react-icons/fa";
-
 import "./styles.css";
 
 const About = () => {

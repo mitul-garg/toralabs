@@ -38,6 +38,12 @@
   place-items: center;
 }
 
+.device-info-hero-btn-container {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+
 .device-info-hero-button {
   background-color: #b4002f;
   color: whitesmoke;
@@ -60,6 +66,10 @@
   background-color: white;
   color: #311e69;
   transform: scale(1.1);
+}
+
+.device-info-hero-btn-icon {
+  font-size: 15px;
 }
 
 .device-info-hero-right-img {
