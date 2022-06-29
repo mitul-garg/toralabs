@@ -2,6 +2,8 @@ import React from "react";
 
 import aboutImg from "../../assets/about.svg";
 
+import { FaExternalLinkAlt } from "react-icons/fa";
+
 import "./styles.css";
 
 const About = () => {
@@ -15,7 +17,16 @@ const About = () => {
         currently, crossing 1M+ installs on Google Play Store, and 2M+ across
         all over internet. We are determined to serve people with our hard-work
         and dedication. We love to convert your dreams into real-world
-        applications!
+        applications! <br />
+        Website Developed by :{" "}
+        <a
+          href="https://mitul-garg.netlify.app"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="mitul-credits"
+        >
+          Mitul Garg
+        </a>
       </p>
     </div>
   );
