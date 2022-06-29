@@ -18,3 +18,43 @@ a {
 ul {
   list-style-type: none;
 }
+
+/* Error Page */
+.error {
+  height: 80vh;
+  display: flex;
+  place-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.error h3 {
+  color: #222222;
+  font-size: 2rem;
+  text-align: center;
+  font-family: "Open Sans", sans-serif;
+}
+
+.error-page-button {
+  background-color: #171137;
+  border: none;
+  color: white;
+  cursor: pointer;
+  padding: 0.75rem 0.75rem;
+  font-size: 1rem;
+  margin-top: 1rem;
+  border-radius: 0.2rem;
+  font-family: "Open Sans", sans-serif;
+  letter-spacing: 1px;
+  font-weight: 600;
+  transition: all 0.5s ease;
+  display: flex;
+  place-items: center;
+  gap: 1rem;
+}
+
+.error-page-button:hover {
+  color: black;
+  background-color: #68e1fd;
+  transform: scale(1.1);
+}

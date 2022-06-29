@@ -3,6 +3,7 @@
   justify-content: space-around;
   place-items: center;
   background-color: #1f1f1f;
+  padding-top: 50px;
 }
 
 .hero-img {
