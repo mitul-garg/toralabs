@@ -21,8 +21,9 @@
 /* credits : https://codepen.io/keithaul */
 
 .front {
-  background-color: #282828;
-  color: #68a7c3;
+  /* background-color: #282828; */
+  color: white;
+  background-image: linear-gradient(180deg, #171137, #1f1f1f);
   border-radius: 10px;
   display: flex;
   flex-direction: column;
@@ -32,18 +33,17 @@
 }
 
 .front .icon-holder {
-  font-size: 3.3rem;
+  font-size: 3.5rem;
 }
 
 .front h2 {
-  color: white;
   font-size: 1.3rem;
   letter-spacing: 1px;
 }
 
 .maincontainer {
-  width: 200px;
-  height: 190px;
+  width: 250px;
+  height: 240px;
   margin: 10px;
   float: left;
 }
@@ -52,16 +52,16 @@
   display: flex;
   place-items: center;
   justify-content: center;
-  font-size: 0.75rem;
-  line-height: 20px;
+  font-size: 0.9rem;
+  line-height: 30px;
   letter-spacing: 1px;
 }
 
 .maincontainer > .front {
   position: absolute;
   transform: perspective(600px) rotateY(0deg);
-  width: 200px;
-  height: 190px;
+  width: 250px;
+  height: 240px;
   backface-visibility: hidden;
   transition: transform 0.6s linear 0s;
 }
@@ -69,16 +69,16 @@
 .maincontainer > .back {
   position: absolute;
   transform: perspective(600px) rotateY(180deg);
-  /* background: #171136;
-  color: white; */
-  background: #244a5a;
+  /* background: #244a5a; */
+  background-image: linear-gradient(180deg, #171137, #1f1f1f);
   color: white;
-  width: 200px;
-  height: 190px;
+  width: 250px;
+  height: 240px;
   border-radius: 10px;
-  padding: 20px;
+  padding: 15px;
   backface-visibility: hidden;
   transition: transform 0.6s linear 0s;
+  text-align: center;
 }
 
 .maincontainer:hover {
@@ -105,6 +105,29 @@
 .youtube-video {
   width: 80%;
   height: 400px;
+}
+
+.device-info-features-button {
+  /* background-color: #ff6161; */
+  background-image: linear-gradient(180deg, #171137, #1f1f1f);
+  color: whitesmoke;
+  padding: 1rem 1.2rem;
+  font-size: 1.2rem;
+  font-weight: 700;
+  letter-spacing: 0.6px;
+  border: none;
+  border-radius: 0.2rem;
+  transition: all 0.5s ease;
+  display: flex;
+  justify-content: center;
+  place-items: center;
+  gap: 0.5rem;
+}
+
+.device-info-features-button:hover {
+  cursor: pointer;
+  background-color: white;
+  transform: scale(1.1);
 }
 
 @media screen and (max-width: 1000px) {

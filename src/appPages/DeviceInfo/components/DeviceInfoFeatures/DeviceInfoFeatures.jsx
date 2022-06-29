@@ -1,6 +1,7 @@
 import React from "react";
 
 import { deviceInfoFeatures } from "../../../../data/deviceInfoFeatures";
+import { IoLogoYoutube } from "react-icons/io5";
 
 import "./styles.css";
 
@@ -25,15 +26,14 @@ const DeviceInfoFeatures = () => {
           </div>
         ))}
       </div>
-      <h2 className="device-info-heading">Watch Detailed Video</h2>
-      <iframe
-        className="youtube-video"
-        src="https://www.youtube.com/embed/iIRDG23SS6s"
-        title="YouTube video player"
-        frameborder="0"
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-        allowFullScreen
-      ></iframe>
+      <a
+        href="https://www.youtube.com/embed/iIRDG23SS6s"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="device-info-features-button"
+      >
+        <span>Watch Video</span> <IoLogoYoutube />
+      </a>
     </div>
   );
 };
