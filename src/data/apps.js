@@ -15,7 +15,7 @@ export const apps = [
     image: deviceInfo,
     name: "Device Info",
     link: "https://play.google.com/store/apps/details?id=com.toralabs.deviceinfo",
-    desc: "Device Info is a user-friendly Android application that gives you complete and detailed information about your mobile device with best user-interface. Device Info is packed with many features to give you all info regarding software and hardware of your android device like CPU, RAM, OS, Sensors, Storage, Battery, SIM, Bluetooth, Installed Apps, System Apps, Display, Camera, Thermal, Codecs, Inputs.",
+    desc: "Device Info is a user-friendly Android application that gives you complete and detailed information about your mobile device with best user-interface. Device Info is packed with many features to give all info of software and hardware of your android device like CPU, RAM, OS, Sensors, Storage, Battery, Bluetooth, Apps, Display, Camera, Thermal, Codecs, Inputs.",
   },
   {
     id: 1,
