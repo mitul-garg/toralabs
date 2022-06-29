@@ -2,7 +2,11 @@ import React from "react";
 
 import "./styles.css";
 
-import { DeviceInfoHero, DeviceInfoFeatures } from "./components";
+import {
+  DeviceInfoHero,
+  DeviceInfoFeatures,
+  DeviceInfoSlider,
+} from "./components";
 import { Wave } from "./components/Divider";
 
 const DeviceInfoPage = () => {
@@ -11,6 +15,7 @@ const DeviceInfoPage = () => {
       <Wave color="white" />
       <DeviceInfoHero />
       <DeviceInfoFeatures />
+      <DeviceInfoSlider />
     </div>
   );
 };
