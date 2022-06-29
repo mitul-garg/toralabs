@@ -30,7 +30,7 @@ export const deviceInfoLinks = [
   {
     id: 1,
     name: "Screenshots",
-    href: "#screeenshots",
+    href: "#screenshots",
   },
   {
     id: 2,
