@@ -34,12 +34,12 @@ export const deviceInfoLinks = [
   },
   {
     id: 2,
-    name: "Stats",
-    href: "#stats",
+    name: "Reviews",
+    href: "#reviews",
   },
   {
     id: 3,
-    name: "Download",
-    href: "#download",
+    name: "FAQs",
+    href: "#faqs",
   },
 ];

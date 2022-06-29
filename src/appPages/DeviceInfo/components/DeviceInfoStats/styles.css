@@ -1,0 +1,128 @@
+.device-info-reviews {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  place-items: center;
+  justify-content: center;
+  padding: 50px 0;
+}
+
+.reviews-heading {
+  font-size: 2rem;
+  letter-spacing: 0.6px;
+}
+
+.reviews-holder {
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+}
+
+.review {
+  color: white;
+  background-image: linear-gradient(180deg, #171137, #1f1f1f);
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  place-items: center;
+  gap: 1rem;
+  width: 350px;
+  height: 450px;
+  transition: all 0.5s ease;
+  font-size: 1.5rem;
+}
+
+.review:hover {
+  transform: scale(1.1);
+}
+
+.review h4 {
+  font-size: 1.4rem;
+  letter-spacing: 0.5px;
+}
+
+.review p {
+  font-size: 1rem;
+  margin: 0 2rem;
+  line-height: 30px;
+  letter-spacing: 0.5px;
+  height: 200px;
+}
+
+.star-holder {
+  color: gold;
+}
+
+.device-info-stats {
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+  place-items: center;
+  justify-content: center;
+  padding: 50px 0;
+  padding-bottom: 50px;
+  background-image: linear-gradient(180deg, #171137, #1f1f1f);
+}
+
+.stats-heading {
+  font-size: 2rem;
+  letter-spacing: 0.6px;
+  color: white;
+}
+
+.stats-holder {
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+}
+
+.stat {
+  color: white;
+  background-color: #b4002f;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  place-items: center;
+  gap: 1rem;
+  width: 200px;
+  height: 200px;
+  transition: all 0.5s ease;
+  font-size: 1.5rem;
+}
+
+.stat:hover {
+  transform: scale(1.1);
+}
+
+.stat .icon {
+  color: white;
+  font-size: 3rem;
+}
+
+.stat h4 {
+  font-size: 1.3rem;
+}
+
+@media screen and (max-width: 1000px) {
+  .stats-holder,
+  .reviews-holder {
+    flex-direction: column;
+  }
+
+  .review {
+    width: 300px;
+  }
+
+  .review h4 {
+    font-size: 1.2rem;
+    letter-spacing: 0.3px;
+  }
+
+  .review p {
+    font-size: 1rem;
+    line-height: 30px;
+    letter-spacing: 0.5px;
+  }
+}
