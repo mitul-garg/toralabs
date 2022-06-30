@@ -35,7 +35,11 @@ const DeviceInfoFAQs = () => {
                 <AiOutlineMinus onClick={closeFAQ} className="faq-icon" />
               )}
             </div>
-            <div className="faq-content">{id === curr && <p>{info}</p>}</div>
+            <div
+              className={id === curr ? `faq-content` : `faq-content closed-faq`}
+            >
+              {id === curr && <p>{info}</p>}
+            </div>
           </div>
         ))}
       </div>

@@ -58,7 +58,7 @@ const DeviceInfoStats = () => {
             <AiOutlineDownload className="icon" />
             <VisibilitySensor partialVisibility offset={{ bottom: 200 }}>
               {({ isVisible }) => (
-                <div>{isVisible ? <CountUp end={100000} /> : "105000"}</div>
+                <div>{isVisible ? <CountUp end={105000} /> : "105000"}</div>
               )}
             </VisibilitySensor>
             <h4>Downloads</h4>
@@ -67,7 +67,7 @@ const DeviceInfoStats = () => {
             <AiFillMobile className="icon" />
             <VisibilitySensor partialVisibility offset={{ bottom: 200 }}>
               {({ isVisible }) => (
-                <div>{isVisible ? <CountUp end={10000} /> : "20000"}</div>
+                <div>{isVisible ? <CountUp end={20000} /> : "20000"}</div>
               )}
             </VisibilitySensor>
             <h4>Active Devices</h4>
@@ -76,7 +76,7 @@ const DeviceInfoStats = () => {
             <BsPencilSquare className="icon" />
             <VisibilitySensor partialVisibility offset={{ bottom: 200 }}>
               {({ isVisible }) => (
-                <div>{isVisible ? <CountUp end={2700} /> : "2710"}</div>
+                <div>{isVisible ? <CountUp end={2710} /> : "2710"}</div>
               )}
             </VisibilitySensor>
             <h4>Reviews</h4>
