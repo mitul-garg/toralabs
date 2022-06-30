@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 
 import { FiChevronLeft, FiChevronRight } from "react-icons/fi";
 import { IoLogoGooglePlaystore } from "react-icons/io5";
+import { GoLinkExternal } from "react-icons/go";
 
 import "./styles.css";
 
@@ -52,6 +53,14 @@ const AppSlider = ({ apps }) => {
                 <a href={link}>
                   <IoLogoGooglePlaystore className="icon" />
                 </a>
+                {name === "Device Info" && (
+                  <a
+                    href="https://toralabs.in/device-info"
+                    style={{ marginLeft: "20px" }}
+                  >
+                    <GoLinkExternal className="icon" />
+                  </a>
+                )}
               </>
               <p className="text">{desc}</p>
             </article>

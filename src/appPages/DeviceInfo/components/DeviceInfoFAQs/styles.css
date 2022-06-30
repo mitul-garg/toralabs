@@ -20,12 +20,14 @@
   justify-content: space-between;
   place-items: center;
   gap: 1rem;
-  background-image: linear-gradient(180deg, #171137, #1f1f1f);
-  color: white;
+  /* background-image: linear-gradient(180deg, #171137, #1f1f1f); */
+  background-color: white;
+  color: #171137;
   width: 800px;
-  border: 2px solid black;
+  /* border: 2px solid #171137; */
   border-radius: 5px;
   padding: 10px 20px;
+  padding-bottom: 0;
 }
 
 .faq-header {
@@ -63,7 +65,7 @@
 }
 
 .faq-icon {
-  background-color: #b4002f;
+  /* background-color: #b4002f; */
   width: 5%;
   height: 20px;
 }
@@ -74,7 +76,7 @@
 
 @media screen and (max-width: 1000px) {
   .faq {
-    width: 280px;
+    width: 340px;
   }
 
   .faq-header {
