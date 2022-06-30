@@ -9,14 +9,28 @@ import sensor from "../../../../assets/device-info/sensor.webp";
 import apps from "../../../../assets/device-info/apps.webp";
 import tests from "../../../../assets/device-info/tests.webp";
 
-import SwiperCore, { EffectCoverflow, Pagination } from "swiper";
+// import SwiperCore, { EffectCoverflow, Pagination } from "swiper";
+// import { Swiper, SwiperSlide } from "swiper/react";
+
+// import "swiper/swiper-bundle.min.css";
+// import "swiper/swiper.min.css";
+
 import { Swiper, SwiperSlide } from "swiper/react";
 
-import "swiper/swiper-bundle.min.css";
-import "swiper/swiper.min.css";
+// // Import Swiper styles
+// import "swiper/css";
+// import "swiper/css/pagination";
+
+import "swiper/css";
+import "swiper/css/lazy";
+import "swiper/css/pagination";
+import "swiper/css/navigation";
+
 import "./styles.css";
 
-SwiperCore.use([EffectCoverflow, Pagination]);
+import { Lazy, Pagination, Navigation } from "swiper";
+
+// SwiperCore.use([EffectCoverflow, Pagination]);
 
 const DeviceInfoSlider = () => {
   return (
@@ -27,43 +41,49 @@ const DeviceInfoSlider = () => {
       </p>
       <div className="slider-container">
         <Swiper
-          effect={"coverflow"}
-          grabCursor={true}
-          centeredSlides={true}
-          slidesPerView={"auto"}
-          coverflowEffect={{
-            rotate: 50,
-            stretch: 0,
-            depth: 100,
-            modifier: 1,
-            slideShadows: false,
+          style={{
+            "--swiper-navigation-color": "#fff",
+            "--swiper-pagination-color": "#fff",
           }}
-          pagination={true}
+          lazy={true}
+          pagination={{
+            clickable: true,
+          }}
+          navigation={true}
+          modules={[Lazy, Pagination, Navigation]}
           className="mySwiper"
         >
           <SwiperSlide>
-            <img src={home} alt="" />
+            <img src={home} className="swiper-lazy" />
+            <div className="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
           </SwiperSlide>
           <SwiperSlide>
-            <img src={device} alt="" />
+            <img src={device} className="swiper-lazy" />
+            <div className="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
           </SwiperSlide>
           <SwiperSlide>
-            <img src={system} alt="" />
+            <img src={system} className="swiper-lazy" />
+            <div className="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
           </SwiperSlide>
           <SwiperSlide>
-            <img src={cpu} alt="" />
+            <img src={cpu} className="swiper-lazy" />
+            <div className="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
           </SwiperSlide>
           <SwiperSlide>
-            <img src={camera} alt="" />
+            <img src={camera} className="swiper-lazy" />
+            <div className="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
           </SwiperSlide>
           <SwiperSlide>
-            <img src={sensor} alt="" />
+            <img src={sensor} className="swiper-lazy" />
+            <div className="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
           </SwiperSlide>
           <SwiperSlide>
-            <img src={apps} alt="" />
+            <img src={apps} className="swiper-lazy" />
+            <div className="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
           </SwiperSlide>
           <SwiperSlide>
-            <img src={tests} alt="" />
+            <img src={tests} className="swiper-lazy" />
+            <div className="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
           </SwiperSlide>
         </Swiper>
       </div>
