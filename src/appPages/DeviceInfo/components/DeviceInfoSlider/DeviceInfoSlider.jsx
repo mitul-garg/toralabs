@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 
 import home from "../../../../assets/device-info/home.webp";
 import device from "../../../../assets/device-info/device.webp";
@@ -22,68 +22,91 @@ import { Swiper, SwiperSlide } from "swiper/react";
 // import "swiper/css/pagination";
 
 import "swiper/css";
-import "swiper/css/lazy";
-import "swiper/css/pagination";
+import "swiper/css/free-mode";
 import "swiper/css/navigation";
+import "swiper/css/thumbs";
 
 import "./styles.css";
 
-import { Lazy, Pagination, Navigation } from "swiper";
+import { FreeMode, Navigation, Thumbs } from "swiper";
 
 // SwiperCore.use([EffectCoverflow, Pagination]);
 
 const DeviceInfoSlider = () => {
+  const [thumbsSwiper, setThumbsSwiper] = useState(null);
+
   return (
     <div className="device-info-slider" id="screenshots">
       <h1>Screenshots</h1>
-      <p>
-        {"<-"} Slide {"->"}
-      </p>
       <div className="slider-container">
         <Swiper
           style={{
             "--swiper-navigation-color": "#fff",
             "--swiper-pagination-color": "#fff",
           }}
-          lazy={true}
-          pagination={{
-            clickable: true,
-          }}
+          spaceBetween={10}
           navigation={true}
-          modules={[Lazy, Pagination, Navigation]}
+          thumbs={{ swiper: thumbsSwiper }}
+          modules={[FreeMode, Navigation, Thumbs]}
+          className="mySwiper2"
+        >
+          <SwiperSlide>
+            <img src={home} />
+          </SwiperSlide>
+          <SwiperSlide>
+            <img src={device} />
+          </SwiperSlide>
+          <SwiperSlide>
+            <img src={system} />
+          </SwiperSlide>
+          <SwiperSlide>
+            <img src={cpu} />
+          </SwiperSlide>
+          <SwiperSlide>
+            <img src={camera} />
+          </SwiperSlide>
+          <SwiperSlide>
+            <img src={sensor} />
+          </SwiperSlide>
+          <SwiperSlide>
+            <img src={apps} />
+          </SwiperSlide>
+          <SwiperSlide>
+            <img src={tests} />
+          </SwiperSlide>
+        </Swiper>
+        <Swiper
+          onSwiper={setThumbsSwiper}
+          spaceBetween={10}
+          slidesPerView={8}
+          freeMode={true}
+          watchSlidesProgress={true}
+          modules={[FreeMode, Navigation, Thumbs]}
           className="mySwiper"
         >
           <SwiperSlide>
-            <img src={home} className="swiper-lazy" />
-            <div className="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
+            <img src={home} />
           </SwiperSlide>
           <SwiperSlide>
-            <img src={device} className="swiper-lazy" />
-            <div className="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
+            <img src={device} />
           </SwiperSlide>
           <SwiperSlide>
-            <img src={system} className="swiper-lazy" />
-            <div className="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
+            <img src={system} />
           </SwiperSlide>
           <SwiperSlide>
-            <img src={cpu} className="swiper-lazy" />
-            <div className="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
+            <img src={cpu} />
           </SwiperSlide>
           <SwiperSlide>
-            <img src={camera} className="swiper-lazy" />
-            <div className="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
+            <img src={camera} />
           </SwiperSlide>
           <SwiperSlide>
-            <img src={sensor} className="swiper-lazy" />
-            <div className="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
+            <img src={sensor} />
           </SwiperSlide>
           <SwiperSlide>
-            <img src={apps} className="swiper-lazy" />
-            <div className="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
+            <img src={apps} />
           </SwiperSlide>
           <SwiperSlide>
-            <img src={tests} className="swiper-lazy" />
-            <div className="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
+            <img src={tests} />
           </SwiperSlide>
         </Swiper>
       </div>
