@@ -5,7 +5,9 @@ import VisibilitySensor from "react-visibility-sensor";
 
 import { AiOutlineDownload, AiFillMobile, AiFillStar } from "react-icons/ai";
 import { BsPencilSquare } from "react-icons/bs";
-import { IoLogoGooglePlaystore } from "react-icons/io5";
+
+import image_get_on_google_play from "../../../../assets/device-info/image_get_on_google_play.png";
+import image_huawei_app_gallery from "../../../../assets/device-info/image_huawei_app_gallery.png";
 
 import "./styles.css";
 
@@ -58,7 +60,9 @@ const DeviceInfoStats = () => {
             <AiOutlineDownload className="icon" />
             <VisibilitySensor partialVisibility offset={{ bottom: 200 }}>
               {({ isVisible }) => (
-                <div>{isVisible ? <CountUp end={105745} duration={1} /> : "105745"}</div>
+                <div>
+                  {isVisible ? <CountUp end={105745} duration={1} /> : "105745"}
+                </div>
               )}
             </VisibilitySensor>
             <h4>Downloads</h4>
@@ -67,7 +71,9 @@ const DeviceInfoStats = () => {
             <AiFillMobile className="icon" />
             <VisibilitySensor partialVisibility offset={{ bottom: 200 }}>
               {({ isVisible }) => (
-                <div>{isVisible ? <CountUp end={20780} duration={1} /> : "20780"}</div>
+                <div>
+                  {isVisible ? <CountUp end={20780} duration={1} /> : "20780"}
+                </div>
               )}
             </VisibilitySensor>
             <h4>Active Devices</h4>
@@ -76,7 +82,9 @@ const DeviceInfoStats = () => {
             <BsPencilSquare className="icon" />
             <VisibilitySensor partialVisibility offset={{ bottom: 200 }}>
               {({ isVisible }) => (
-                <div>{isVisible ? <CountUp end={2714} duration={1} /> : "2714"}</div>
+                <div>
+                  {isVisible ? <CountUp end={2714} duration={1} /> : "2714"}
+                </div>
               )}
             </VisibilitySensor>
             <h4>Reviews</h4>
@@ -87,14 +95,24 @@ const DeviceInfoStats = () => {
             <h4>Average Rating</h4>
           </div>
         </div>
-        <a
-          href="https://play.google.com/store/apps/details?id=com.toralabs.deviceinfo"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="device-info-hero-button"
-        >
-          Download <IoLogoGooglePlaystore />
-        </a>
+        <div className="device-info-download-img-holder">
+          <a
+            href="https://play.google.com/store/apps/details?id=com.toralabs.deviceinfo"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="device-info-download-img-1"
+          >
+            <img src={image_get_on_google_play} />
+          </a>
+          <a
+            href="https://play.google.com/store/apps/details?id=com.toralabs.deviceinfo"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="device-info-download-img-2"
+          >
+            <img src={image_huawei_app_gallery} />
+          </a>
+        </div>
       </div>
     </>
   );

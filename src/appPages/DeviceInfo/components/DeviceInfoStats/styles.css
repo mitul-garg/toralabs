@@ -105,6 +105,21 @@
   font-size: 1.3rem;
 }
 
+.device-info-download-img-holder {
+  display: flex;
+  place-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.device-info-download-img-1 img {
+  width: 224px;
+}
+
+.device-info-download-img-2 img {
+  width: 200px;
+}
+
 @media screen and (max-width: 1000px) {
   .stats-holder,
   .reviews-holder {
@@ -124,5 +139,17 @@
     font-size: 1rem;
     line-height: 30px;
     letter-spacing: 0.5px;
+  }
+
+  .device-info-download-img-holder {
+    /* flex-direction: column; */
+  }
+
+  .device-info-download-img-1 img {
+    width: 174px;
+  }
+
+  .device-info-download-img-2 img {
+    width: 150px;
   }
 }
