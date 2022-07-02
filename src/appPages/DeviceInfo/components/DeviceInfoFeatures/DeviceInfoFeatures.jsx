@@ -115,13 +115,13 @@ const DeviceInfoFeatures = () => {
             </p>
           </div>
           <img
-            src={image_colorful_collage}
+            src={image_language_collage}
             className="feature-ss-img ss-img-desktop"
           />
         </div>
         <div className="feature-ss-container">
           <img
-            src={image_language_collage}
+            src={image_colorful_collage}
             className="feature-ss-img collage"
           />
           <div className="feature-ss-content">
