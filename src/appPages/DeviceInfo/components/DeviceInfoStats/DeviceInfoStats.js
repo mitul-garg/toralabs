@@ -14,21 +14,21 @@ import "./styles.css";
 const reviews = [
   {
     id: 0,
-    name: "Simon Powell",
+    name: "Brad Forge",
     review:
-      "Can't say enough good things about this tool. Now all I have to do is root this blade a51 and I can enjoy full functionality and diagnostic bliss at long last. Truly inspired, thankyou.",
+      "After using this app, I'm satisfied with the info, usefulness, and layout, ads not too intrusive or bothersome. Good job Developer, useful app, spot on.",
   },
   {
     id: 1,
-    name: "Pranav Upadhyay",
+    name: "Ne0Gen3tic (German)",
     review:
-      "This app is really amazing and helpful. User interface of the app is great and easy to use. I get all my system details in it and also I can check in my system performance. Overall u should give it a try and it will be very helpful.",
+      "WoW! Hier wird bewiesen daß blau weiss auch extrem gut aussehen kann! Tolles Grafische Oberfläche um Wirkliche ALLE Dateiinformationen schön und Gegliedert anzuzeigen!",
   },
   {
     id: 2,
     name: "Cristine E. Wright",
     review:
-      "Clean and informative interface. Even the add placement is non-obtusive. Generally, I hate adds and rather support developers so I paid the $2 for the add free version. Well worth it and earned on their end.",
+      "Really impressed. Clean and informative interface. Even the add placement is non-obtusive. Generally, I hate adds and rather support developers so I paid the $2 for the add free version. Well worth it.",
   },
 ];
 
