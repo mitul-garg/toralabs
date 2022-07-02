@@ -115,7 +115,7 @@ const DeviceInfoFeatures = () => {
             </p>
           </div>
           <img
-            src={image_colorful_collage}
+            src={image_language_collage}
             className="feature-ss-img ss-img-desktop"
           />
         </div>
