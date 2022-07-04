@@ -1,4 +1,5 @@
 import React, { useRef, useState } from "react";
+import { Link } from "react-router-dom";
 import emailjs from "@emailjs/browser";
 import { Rings } from "react-loader-spinner";
 
@@ -109,7 +110,16 @@ const Footer = () => {
         ))}
       </ul>
       <div className="copyright">
-        <AiOutlineCopyrightCircle /> ToraLabs {new Date().getFullYear()} | All Rights Reserved
+        <a
+          href="https://toralabs.in/privacy-policy"
+          className="privacy-footer-link"
+        >
+          Privacy Policy
+        </a>
+        <div>
+          <AiOutlineCopyrightCircle /> ToraLabs {new Date().getFullYear()} | All
+          Rights Reserved
+        </div>
       </div>
     </div>
   );

@@ -91,6 +91,24 @@
 .copyright {
   display: flex;
   place-items: center;
+  flex-direction: column;
+  font-size: 1rem;
+  letter-spacing: 1px;
+  gap: 0.6rem;
+}
+
+.privacy-footer-link {
+  font-size: 1rem;
+  letter-spacing: 1px;
+  gap: 0.3rem;
+  border-bottom: 1px solid white;
+  padding-bottom: 1px;
+  color: white;
+}
+
+.copyright div {
+  display: flex;
+  place-items: center;
   font-size: 1rem;
   letter-spacing: 1px;
   gap: 0.3rem;

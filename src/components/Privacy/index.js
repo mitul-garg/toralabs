@@ -8,3 +8,4 @@ export { default as JEEMains } from "./jeeMains";
 export { default as Maths } from "./maths";
 export { default as Neet } from "./neet";
 export { default as Physics } from "./physics";
+export { default as WebsitePrivacy } from "./websitePrivacy";

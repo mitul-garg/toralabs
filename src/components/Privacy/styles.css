@@ -80,3 +80,12 @@
   gap: 1rem;
   line-height: 30px;
 }
+
+.website-policy-content {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  line-height: 30px;
+  letter-spacing: 0.3px;
+  margin: 1rem 0.5rem;
+}

@@ -6,6 +6,7 @@ import "./App.css";
 import { Navbar, Hero, AppSlider, Cards, About, Footer } from "./components";
 import { Wave } from "./appPages/DeviceInfo/components/Divider";
 import PrivacyNavbar from "./components/Privacy/PrivacyNavbar";
+import { WebsitePrivacy } from "./components/Privacy";
 
 import { Error } from "./Error";
 
@@ -60,6 +61,18 @@ const App = () => {
               <>
                 <Navbar links={deviceInfoLinks} heading="Device Info" />
                 <DeviceInfoPage />
+                <Footer />
+              </>
+            }
+          />
+
+          <Route
+            path="/privacy-policy"
+            exact
+            element={
+              <>
+                <PrivacyNavbar />
+                <WebsitePrivacy />
                 <Footer />
               </>
             }
